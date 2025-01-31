@@ -1,0 +1,165 @@
+body {
+    background: fixed;
+    background-image: url(https://www.svgbackgrounds.com/wp-content/uploads/2021/05/protruding-squares-orange-background.png);
+    background-repeat: repeat;
+    background-size: 30%;
+    min-width: 800px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 40px;
+    font-size: 12pt;
+}
+main {
+    background-color: rgb(78, 77, 77);
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(237, 221, 198);
+    max-width: 1080px;
+    height: auto;
+}
+.container
+{
+    display: grid;
+    grid-template-areas: "personal_inf image"
+                         "books image"
+                         "interests interests"
+                         "schedule haiku"
+                         "schedule computer";
+}
+#name {
+    font-size: 30pt;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-shadow: 2px 2px orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-mask:linear-gradient(-30deg,#ffffff 30%,rgba(255, 255, 255, 0.333),#ffffff 80%) right/300% 100%;
+    animation: shimmer 2.5s infinite;
+} 
+h2
+{
+    font-size: 20pt;;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+   @keyframes shimmer {
+   100% {-webkit-mask-position:left}
+  }
+#ski_img
+{
+    width: 100%
+}
+.image {
+    width: 250px;
+    float: right;
+    margin: 0 auto;
+    justify-content: right;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: rgb(237, 221, 198);
+    color: black;
+    margin-top: 25px;
+
+    grid-area: image;
+}
+hr {
+    height: 5px;
+    background-color: rgb(237, 221, 198);
+}
+.image p {
+    font-size: 12pt;
+    text-align: center;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(73, 73, 255);
+  }
+a {
+    text-decoration: solid;
+    color: rgb(146, 146, 255);
+}
+.interests
+{
+    grid-area: interests;
+}
+.interests p
+{
+    text-indent: 25px;
+    margin-bottom: 12px;
+}
+.personal_inf
+{
+    grid-area: personal_inf;
+}
+.schedule table
+{
+
+    background-color: grey;
+    color: rgb(237, 221, 198);
+    text-shadow: 2px 1px black;
+    width: 90%;
+    border: 3px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+.schedule
+{
+    display: block;
+    grid-area: schedule;
+}
+tr, td, th {
+    width: 16.6%;
+    height: 16.6%;
+
+}
+td {
+    font-size: 15pt;
+    border-bottom: 2px solid rgb(250, 144, 95);
+    border-right: 2px solid rgb(250, 144, 95);
+}
+th {
+    font-size: 16pt;
+    background-color: rgb(176, 77, 1);
+    border-right: rgb(250, 144, 95);
+}
+table tr:nth-child(even)
+{
+    background-color: #ff6400cc;
+}
+table tr:nth-child(odd)
+{
+    background-color: rgb(217, 144, 95);
+}
+#work
+{
+    background-color: #343a40;
+    padding-right: 3px;
+    text-align: center;
+}
+#math
+{
+    background-color: #212529;
+    padding-right: 3px;
+    text-align: center;
+}
+#csmath
+{
+    background-color: #343a40;
+    padding-right: 3px;
+    text-align: center;
+}
+#webdev
+{
+    background-color: #212529;
+    padding-right: 3px;
+    text-align: center;
+}
+.haiku {
+    grid-area: haiku;
+}
+.computer{
+    grid-area: computer;
+}
+.computer img {
+    width: 70%;
+    grid-area: computer;
+}

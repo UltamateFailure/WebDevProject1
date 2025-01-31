@@ -26,7 +26,7 @@ Reflect:  I really didn't like doing the table. I ran into a lot of issues tryin
 
 
 
- --SELF GRADE--
+ --SELF GRADE-- PROJECT 1
 HEADER                      A
 PERSONAL INFO               A
 FAVE BOOKS                  A
@@ -42,240 +42,260 @@ INDENT/CENTER HAIKU (2pts)          YES
 TABLE-TEXT ALIGN (2pts)             NO
 TABLE-COLOR CODE (2pts)             YES
 TABLE-EQUAL COL WIDTH (2pts)        YES
+
+
+
+
+--SELF GRADE-- PROJECT 2
+BODY        A
+NAME        A
+PORTRAIT    A
+HEADINGS    A
+SCHEDULE    A I didn't add a background graphic because
+I wanted to do the stripes with the schedule
+
+--EXTRA CREDIT COMPLETED--
+FLOATING DIV (5pts)    Yes
+STRIPED TABLE (5pts)   YES
+MODAL PORTRAIT (10pts) NO
+ARTISTIC MERIT (10pts) YES Instead of using only floats I wanted to try the grid container and it made it easier to add
+abother section. I also got the fixed background to work with a repeating image. The animation for the name was the hardest as
+I had to scrounge around the internet to find out how gradients work then animate them. Also I wanted to make my image look like a polaroid
+but I couldn't figure out filters so I just added text and left it how it is.
+
+ADDITIONAL COMMENTS
 -->
 <html>
 
 <head>
 	<title> About Bryce Jordan </title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-
-	<style>
-		body {
-			background-image: url(https://graphicdesignjunction.com/wp-content/uploads/2014/05/001+background+pattern+designs.jpg);
-			background-repeat: repeat;
-		}
-	</style>
+<body>
 	<main>
-		<h1>Bryce Jordan</h1>
-		<hr>
-		<img src="img/skiing_photo.jpg" width="400" height="auto">
+		<h1 id="name">Bryce Jordan</h1>
+			<hr>
+		<div class="container">
+			<div class="image">
+				<img id="ski_img" src="img/skiing_photo.jpg">
+				<p>Recent ski trip to Brighton Ski Resort</p>
+			</div>
+			<div class="personal_inf">
+				<h2>Personal info:</h2>
+				<ul>
+					<li><strong>Major:</strong> Computer Science</li>
+					<li><Strong>High School:</strong>Alta High School, Sandy Utah, 2023</li>
+					<li><Strong>Current year at UVU:</strong> Sophmore</li>
+					<li><strong>Favorite Ice-cream:</strong>Peanut Butter Cookie Dough
+			</div>
 
-		<hr>
+			<div class="books">
+				<h2>My five favorite books</h2>
+				<ol>
+					<li><em>Morality</em> by <a href="https://en.wikipedia.org/wiki/Christopher_Hitchens"
+							target="_blank">
+							Christopher Hitchens</a></li>
+					<li><em>Where the Red Fern Grows</em> by <a href="https://en.wikipedia.org/wiki/Wilson_Rawls"
+							target="_blank">Wilson Rawls</a> </li>
+					<li><em>The God Delusion</em> by <a href="https://en.wikipedia.org/wiki/Richard_Dawkins"
+							target="_blank"> Richard Dawkins</a> </li>
+					<li><em>Michael Vey</em> by <a href="https://richardpaulevans.com/" target="_blank">Richard Paul
+							Evans</a> </li>
+					<li><em>Percy Jackson</em> by <a href="https://rickriordan.com/" target="_blank">Rick Riordan</a>
+					</li>
 
-		<section>
-			<h2>Personal info:</h2>
-			<ul>
-				<li><strong>Major:</strong> Computer Science</li>
-				<li><Strong>High School:</strong>Alta High School, Sandy Utah, 2023</li>
-				<li><Strong>Current year at UVU:</strong> Sophmore</li>
-				<li><strong>Favorite Ice-cream:</strong>Peanut Butter Cookie Dough
-		</section>
+				</ol>
+			</div>
 
-		<hr>
+			<div class="interests">
+				<h2>My personal interests</h2>
+				<p> I spend way too much time playing games. My current favorite games are
+					Helldivers, Warframe, Portal and Project Zomboid. This is the hobby I sink the most time and money
+					into.
+					I have a beefy rig that I am still upgrading. I am really excited for the new 50 series graphics
+					card
+					from Nividia. I am so excited for a game that was announced recently called The Blood of The
+					Dawnbreaker
+					from developers that I have been following for a while. </p>
+				<p> Another big interest I have is theology, the study of religion. I have started
+					to get interested in this topic a few years ago after reading several texts. This opened me up to
+					this
+					amazing world of philosophy and deeper thought. Now I watch a lot of <a
+						href="https://www.youtube.com/@CosmicSkeptic" target="_blank">Alex O'Connor</a> who is a fast
+					growing philosopher who hosts a show called <em>Within Reason</em> where Alex hosts a guest from
+					many
+					different schools of thought. This interest has helped me expand my own thought about life and
+					death.
+				</p>
+				<p>With winter upon us I have been so excited to go up on the slopes with just two
+					planks of wood going over 50mph. I have skiied since I was 4 and have tried to go up every year
+					since.
+					Two years ago I got a bad concussion on Christmas and took a year break the next season. This season
+					is
+					my first season back since then. I just bought new skis, poles and boots. It was a blast to go up on
+					the
+					mountain again.</p>
+			</div>
 
-		<section>
-			<h2>My five favorite books</h2>
-			<ol>
-				<li><em>Morality</em> by <a href="https://en.wikipedia.org/wiki/Christopher_Hitchens" target="_blank">
-						Christopher Hitchens</a></li>
-				<li><em>Where the Red Fern Grows</em> by <a href="https://en.wikipedia.org/wiki/Wilson_Rawls"
-						target="_blank">Wilson Rawls</a> </li>
-				<li><em>The God Delusion</em> by <a href="https://en.wikipedia.org/wiki/Richard_Dawkins"
-						target="_blank"> Richard Dawkins</a> </li>
-				<li><em>Michael Vey</em> by <a href="https://richardpaulevans.com/" target="_blank">Richard Paul
-						Evans</a> </li>
-				<li><em>Percy Jackson</em> by <a href="https://rickriordan.com/" target="_blank">Rick Riordan</a></li>
+			<div class="haiku">
+				<h2>Haiku</h2>
+				<p>Worked on the poem in the library while my friends sent memes in a groupchat and we tried to stay
+					quiet.
+					Didn't get much work done.</p>
+				<p style="text-align: center">The Library, Quiet</p>
+				<p style="text-align: center">Stiffled laughs alongside friends</p>
+				<p style="text-align: center">No work was started</p>
+			</div>
 
-			</ol>
-		</section>
+			<div class="computer">
+				<h2>Workstation Highlight</h2>
+				<p>I wanted to show off my workstaion where no work really gets done. Mostly gaming and chatting with
+					friends.</p>
+				<img src="img/computer.jpg" alt="Computer setup">
+			</div>
 
-		<hr>
+			<div class="schedule">
+				<h2>Weekly Schedule</h2>
+				<table>
+					<tr>
+						<th></th>
+						<th>Mon</th>
+						<th>Tues</th>
+						<th>Wed</th>
+						<th>Thur</th>
+						<th>Fri</th>
+					</tr>
+					<tr>
+						<td>2:30</td>
+						<td></td>
+						<td id="webdev" rowspan="3">CS 2550</td>
+						<td></td>
+						<td id="webdev" rowspan="3">CS 2550</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3:00</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3:30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4:00</td>
+						<td></td>
+						<td id="csmath" rowspan="3">CS 2300</td>
+						<td></td>
+						<td id="csmath" rowspan="3"> CS 2300</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4:30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5:00</td>
+						<td id="work" rowspan="13">Work</td>
+						<td id="work" rowspan="13">Work</td>
+						<td id="work" rowspan="15">Work</td>
+					</tr>
+					<tr>
+						<td>5:30</td>
+						<td id="math" rowspan="4">Math 1060</td>
+						<td id="math" rowspan="4">Math 1060</td>
 
-		<section>
-			<h2>My personal interests</h2>
-			<p style="text-indent: 25px"> I spend way too much time playing games. My current favorite games are
-				Helldivers, Warframe, Portal and Project Zomboid. This is the hobby I sink the most time and money into.
-				I have a beefy rig that I am still upgrading. I am really excited for the new 50 series graphics card
-				from Nividia. I am so excited for a game that was announced recently called The Blood of The Dawnbreaker
-				from developers that I have been following for a while. </p>
-			<p style="text-indent: 25px"> Another big interest I have is theology, the study of religion. I have started
-				to get interested in this topic a few years ago after reading several texts. This opened me up to this
-				amazing world of philosophy and deeper thought. Now I watch a lot of <a
-					href="https://www.youtube.com/@CosmicSkeptic" target="_blank">Alex O'Connor</a> who is a fast
-				growing philosopher who hosts a show called <em>Within Reason</em> where Alex hosts a guest from many
-				different schools of thought. This interest has helped me expand my own thought about life and death.
-			</p>
-			<p style="text-indent: 25px">With winter upon us I have been so excited to go up on the slopes with just two
-				planks of wood going over 50mph. I have skiied since I was 4 and have tried to go up every year since.
-				Two years ago I got a bad concussion on Christmas and took a year break the next season. This season is
-				my first season back since then. I just bought new skis, poles and boots. It was a blast to go up on the
-				mountain again.</p>
-		</section>
-
-		<hr>
-
-		<section>
-			<h2>Haiku</h2>
-			<p style="text-align: center">The Library, Quiet</p>
-			<p style="text-align: center">Stiffled laughs alongside friends</p>
-			<p style="text-align: center">No work was started</p>
-			<p>Worked on the poem in the library while my friends sent memes in a groupchat and we tried to stay quiet.
-				Didn't get much work done.</p>
-		</section>
-
-		<hr>
-
-		<section>
-			<h2>Weekly Schedule</h2>
-			<style>
-				table,
-				th,
-				td {
-					border: 1px solid black;
-					width: 10px;
-				}
-			</style>
-			<table style="width: 600px; vertical-align: auto;">
-				<tr>
-					<th></th>
-					<th>Mon</th>
-					<th>Tues</th>
-					<th>Wed</th>
-					<th>Thur</th>
-					<th>Fri</th>
-				</tr>
-				<tr>
-					<td>2:30</td>
-					<td></td>
-					<td rowspan="3" style="background-color: red;">CS 2550</td>
-					<td></td>
-					<td rowspan="3" style="background-color: red;">CS 2550</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>3:00</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>3:30</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>4:00</td>
-					<td></td>
-					<td rowspan="3" style="background-color: rgb(104, 247, 104)">CS 2300</td>
-					<td></td>
-					<td rowspan="3" style="background-color: rgb(104, 247, 104)">CS 2300</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>4:30</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>5:00</td>
-					<td rowspan="13" style="background-color: rgb(249, 79, 238)">Work</td>
-					<td rowspan="13" style="background-color: rgb(249, 79, 238)">Work</td>
-					<td rowspan="15" style="background-color: rgb(249, 79, 238)">Work</td>
-				</tr>
-				<tr>
-					<td>5:30</td>
-					<td rowspan="4" style="background-color: rgb(140, 114, 255)">Math 1060</td>
-					<td rowspan="4" style="background-color: rgb(140, 114, 255)">Math 1060</td>
-
-				</tr>
-				<tr>
-					<td>6:00</td>
-				</tr>
-				<tr>
-					<td>6:30</td>
+					</tr>
+					<tr>
+						<td>6:00</td>
+					</tr>
+					<tr>
+						<td>6:30</td>
 
 
-				</tr>
-				<tr>
-					<td>7:00</td>
-				</tr>
-				<tr>
-					<td>7:30</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>8:00</td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>7:00</td>
+					</tr>
+					<tr>
+						<td>7:30</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>8:00</td>
+						<td></td>
 
-					<td></td>
+						<td></td>
 
-				</tr>
-				<tr>
-					<td>8:30</td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>8:30</td>
+						<td></td>
 
-					<td></td>
+						<td></td>
 
-				</tr>
-				<tr>
-					<td>9:00</td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>9:00</td>
+						<td></td>
 
-					<td></td>
+						<td></td>
 
-				</tr>
-				<tr>
-					<td>9:30</td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>9:30</td>
+						<td></td>
 
-					<td></td>
+						<td></td>
 
-				</tr>
-				<tr>
-					<td>10:00</td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>10:00</td>
+						<td></td>
 
-					<td></td>
+						<td></td>
 
-				</tr>
-				<tr>
-					<td>10:30</td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>10:30</td>
+						<td></td>
 
-					<td></td>
+						<td></td>
 
-				</tr>
-				<tr>
-					<td>11:00</td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>11:00</td>
+						<td></td>
 
-					<td></td>
+						<td></td>
 
-				</tr>
-				<tr>
-					<td>11:30</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>11:30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 
-				</tr>
-				<tr>
-					<td>12:00</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					</tr>
+					<tr>
+						<td>12:00</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 
-				</tr>
-			</table>
-		</section>
-		<hr>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</main>
 </body>
 
